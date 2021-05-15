@@ -13,8 +13,7 @@ services:
     volumes:
       - .:/code
     command: >
-      sh -c "wait-for db:5432 && wait-for rabbit:5672 &&
-             python /code/manage.py migrate &&
+      sh -c "python /code/manage.py migrate &&
              python /code/manage.py runserver 0.0.0.0:8000"
     stdin_open: true
     tty: true
@@ -40,7 +39,7 @@ services:
     image: web-image
     restart: on-failure
     command: >
-      sh -c "wait-for backend:8000 && celery -A config worker -l info"
+      sh -c "wait-for web:8000 && celery -A config worker -l info"
     depends_on:
       - web
       - rabbit
@@ -57,7 +56,7 @@ services:
     environment:
       - "POSTGRES_HOST_AUTH_METHOD=trust"
     ports:
-      - "5432:5432"
+      - "5433:5433"
     networks:
       - shared_network
 
