@@ -28,7 +28,7 @@ def payment_process(request):
                       'your resent purchase.'
             email = EmailMessage(subject,
                                  message,
-                                 'admin@shop2021.com',
+                                 settings.EMAIL_HOST_USER,
                                  [order.email])
             html = render_to_string('orders/order/pdf.html', {'order': order})
             out = BytesIO()
