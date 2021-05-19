@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-19 05:29+0400\n"
-"PO-Revision-Date: 2021-05-19 06:18+0000\n"
+"POT-Creation-Date: 2021-05-19 11:14+0000\n"
+"PO-Revision-Date: 2021-05-19 11:26+0000\n"
 "Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -24,7 +24,6 @@ msgid "Quantity"
 msgstr "Количество"
 
 #: cart/templates/cart/detail.html:5 cart/templates/cart/detail.html:7
-#| msgid "Your cart"
 msgid "Your shoping cart"
 msgstr "Ваша корзина"
 
@@ -80,13 +79,13 @@ msgstr "Продолжить покупки"
 
 #: cart/templates/cart/detail.html:83
 msgid "Checkout"
-msgstr "Рассчитаться"
+msgstr "Оформить заказ"
 
-#: config/settings.py:110
+#: config/settings.py:79
 msgid "English"
 msgstr "Английский"
 
-#: config/settings.py:111
+#: config/settings.py:80
 msgid "Russian"
 msgstr "Русский"
 
@@ -114,6 +113,26 @@ msgstr "купон"
 msgid "Coupon"
 msgstr "Купон"
 
+#: payment/templates/payment/process.html:3
+msgid "Pay by credit card"
+msgstr "Оплатить кредитной картой"
+
+#: payment/templates/payment/process.html:9
+msgid "Card Number"
+msgstr "Номер кредитной карты"
+
+#: payment/templates/payment/process.html:12
+msgid "CVV"
+msgstr "CVV/СVC"
+
+#: payment/templates/payment/process.html:15
+msgid "Expiration Date"
+msgstr "Дата окончания действия карты"
+
+#: payment/templates/payment/process.html:20
+msgid "Pay"
+msgstr "оплатить"
+
 #: payment/urls.py:9
 msgid "process/"
 msgstr ""
@@ -134,11 +153,11 @@ msgstr "Мой магазин"
 msgid "Language"
 msgstr "Язык сайта"
 
-#: shop/templates/shop/base.html:34
+#: shop/templates/shop/base.html:33
 msgid "Your cart"
 msgstr "Ваша корзина"
 
-#: shop/templates/shop/base.html:36
+#: shop/templates/shop/base.html:35
 #, python-format
 msgid ""
 "\n"
@@ -150,14 +169,17 @@ msgstr ""
 "%(total_items)s ед.%(total_items_plural)s,\n"
 "$%(total_price)s"
 
-#: shop/templates/shop/base.html:42
-#| msgid "Your cart is empty."
+#: shop/templates/shop/base.html:41
 msgid "Your cart is empty"
 msgstr "Ваша корзина пуста"
 
 #: shop/templates/shop/product/detail.html:20
 msgid "Add to cart"
 msgstr "Добавить в корзину"
+
+#: shop/templates/shop/product/detail.html:25
+msgid "People who bought this also  bought"
+msgstr "С этим товаром обычно приобретают и"
 
 #: shop/templates/shop/product/list.html:5
 #: shop/templates/shop/product/list.html:22

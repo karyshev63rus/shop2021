@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-19 05:29+0400\n"
-"PO-Revision-Date: 2021-05-19 04:59+0000\n"
-"Last-Translator: b'  <admin@mail.com>'\n"
+"POT-Creation-Date: 2021-05-19 11:14+0000\n"
+"PO-Revision-Date: 2021-05-19 11:17+0000\n"
+"Last-Translator: b'  <>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -44,8 +44,9 @@ msgid "city"
 msgstr "город"
 
 #: orders/templates/orders/order/create.html:3
+#: orders/templates/orders/order/create.html:5
 msgid "Checkout"
-msgstr "Рассчитаться"
+msgstr "Оформить заказ"
 
 #: orders/templates/orders/order/create.html:7
 msgid "Your order"
