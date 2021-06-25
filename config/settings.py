@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     'coupons.apps.CouponsConfig',
     'rosetta',
     'parler',
+    'easy_thumbnails',
 ]
 
 MIDDLEWARE = [

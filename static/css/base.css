@@ -1,3 +1,4 @@
+
 /*@import url(http://fonts.googleapis.com/css?family=Ubuntu);*/
 
 body {
@@ -73,7 +74,8 @@ table.cart {
 }
 
 table.cart img {
-    width:180px;
+    max-width:100%;
+    height:auto;
 }
 
 tbody td.num {
@@ -193,7 +195,8 @@ ul.errorlist {
 }
 
 .product-list .item img {
-    width:100%;
+    max-width:100px;
+    height:auto;
     margin-bottom:8px;
 }
 

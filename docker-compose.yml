@@ -27,8 +27,6 @@ services:
     image: rabbitmq:3-management
     container_name: rabbit
     hostname: rabbit
-    environment:
-      - "POSTGRES_HOST_AUTH_METHOD=trust"
     ports:
       - "5682:5672"
       - "15682:15672"
